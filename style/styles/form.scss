@@ -1,0 +1,249 @@
+.form{
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 80px;
+    .adap_title{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    &__box{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 80px;
+        &-img{
+            margin: auto 0;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &-title{
+            font-family: "Lab Grotesque";
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.5);
+            line-height: 25px;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+        &-inputs{
+            width: 410px;
+            &-length{
+                label{
+                    color: white;
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+            &-checkbox-block{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-left: 20px;
+                label{
+                    width: 60%;
+                    color: white;
+                    margin-top: 7px;
+                    font-size: 16px;
+                    input[type=checkbox]{
+                        display: none;
+                    }
+                    span:before {
+                        content: " ";
+                        color: white;
+                        display: inline-block;
+                        position: relative;
+                        margin-right: 15px;
+                        margin-left: -18px;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #1d1d1c;
+                        border: 1px solid rgba(255, 207, 122, 1);
+                        border-image: initial;
+                        border-radius: 2px;
+                        vertical-align: middle;
+                    }
+                    [type=checkbox]:checked + span:before {
+                        content: "+";
+                        background-color: rgba(255, 207, 122, 1);
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    &__info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+        &-length-num{
+            font-size: 24px;
+            color: white;
+            font-weight: 500;
+        }
+        &-panel-color{
+            width: 30px;
+            height: 30px;
+            background-color: rgba(184, 84, 42, 1);
+            border-radius: 50%;
+        }
+    }
+    &__button{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 20px;
+        padding-left: 40px;
+        &-price-text{
+            font-size: 36px;
+            line-height: 0;
+            color: rgba(255, 207, 122, 1);
+        }
+        &-btn{
+            margin: auto auto;
+            width: 224px;
+            height: 55px;
+            border-radius: 2px;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: rgba(236, 207, 148, 1);
+        }
+    }
+}
+
+@media (max-width: 1240px){
+    .form{
+        width: 90%;
+        row-gap: 20px;
+        column-gap: 30px;
+        &__box{
+            grid-template-columns: 45% 55%;
+            &-title{
+                font-size: 10px;
+            }
+            &-inputs{
+                &-checkbox-block{
+                    label{
+                        font-size: 13px;
+                        span:before{
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 769px){
+    .form{
+        width: 95%;
+        row-gap: 10px;
+        column-gap: 1px;
+        &__box{
+            grid-template-columns: 45% 55%;
+            column-gap: 80px;
+            &-title{
+                font-size: 8px;
+            }
+            &-inputs{
+                width: 330px;
+                &-checkbox-block{
+                    label{
+                        width: 80%;
+                        font-size: 12px;
+                        span:before{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            padding: 0;
+            &-length-num{
+                font-size: 18px;
+                color: white;
+                font-weight: 500;
+            }
+        }
+        &__button{
+            padding-top: 0;
+            &-price-text{
+                font-size: 26px;
+            }
+            &-btn{
+                width: 134px;
+                height: 35px;
+                border: none;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .form{
+        width: 100%;
+        display: block;
+        &__box{
+            width: 100%;
+            display: block;
+            padding-left: 64px;
+            &-img{
+                display: none;
+            }
+            &-title{
+                font-size: 8px;
+            }
+            &-inputs{
+                width: 100%;
+                margin: 0 auto;
+                &-checkbox-block{
+                    label{
+                        width: 80%;
+                        font-size: 12px;
+                        span:before{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+                &-panel-block{
+                    padding-left: 34px;;
+                }
+            }
+        }
+        &__info{
+            padding-left: 64px;
+            padding-top: 20px;
+            &-length-num{
+                font-size: 16px;
+            }
+            &-panel-color{
+                width: 23px;
+                height: 23px;
+            }
+        }
+        &__button{
+            padding-left: 64px;
+            &-price-text{
+                font-size: 18px;
+            }
+            &-btn{
+                width: 67px;
+                height: 30px;
+                margin-left: 0;
+                margin-top: 33px;
+                font-size: 10px;
+            }
+        }
+    }
+}

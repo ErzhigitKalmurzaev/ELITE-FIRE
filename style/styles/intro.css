@@ -1,0 +1,323 @@
+.intro {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 200px;
+  position: relative;
+}
+.intro__title-head {
+  width: 700px;
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(19.43deg, rgba(255, 255, 255, 0) 1.37%, #FFFFFF 69.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  text-align: center;
+}
+.intro__title-info {
+  width: 560px;
+  font-size: 19px;
+  letter-spacing: 0.05em;
+  font-family: "Lab Grotesque";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 30px auto;
+}
+.intro__img {
+  position: relative;
+  margin-top: -730px;
+  width: 98%;
+  height: 895px;
+  z-index: -1;
+  opacity: 1;
+}
+.intro__imge {
+  margin: 0 auto;
+  height: 495px;
+}
+.intro__advantage {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: -160px;
+}
+.intro__advantage .info_icon {
+  width: 280px;
+  margin-left: 50px;
+  color: white;
+  text-align: center;
+}
+.intro__advantage .info_icon svg {
+  width: 47px;
+  height: 47px;
+}
+.intro__advantage .info_icon p {
+  width: 170px;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 10px;
+  display: inline-block;
+  line-height: 24px;
+}
+
+@media (max-width: 1240px) {
+  .intro {
+    width: 90%;
+  }
+  .intro__title-head {
+    font-size: 40px;
+  }
+  .intro__title-info {
+    font-size: 19px;
+  }
+  .intro__img {
+    position: relative;
+    margin-top: -180px;
+    margin-left: 25px;
+    width: 95%;
+    height: auto;
+    z-index: -1;
+    opacity: 1;
+  }
+  .intro__imge {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .intro__advantage {
+    margin-top: -90px;
+  }
+  .intro__advantage .info_icon svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+@media (max-width: 768px) {
+  .intro {
+    width: 95%;
+  }
+  .intro__title-head {
+    width: 550px;
+    font-size: 29px;
+  }
+  .intro__title-info {
+    font-size: 16px;
+  }
+  .intro__img {
+    position: relative;
+    top: 70px;
+    margin-left: 25px;
+    width: 90%;
+    height: auto;
+    z-index: -1;
+    opacity: 1;
+  }
+  .intro__imge {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+  }
+  .intro__advantage {
+    margin: 0 auto;
+    margin-left: -20px;
+  }
+  .intro__advantage .info_icon {
+    width: 220px;
+    margin-left: 35px;
+    margin-top: -100px;
+  }
+  .intro__advantage .info_icon svg {
+    width: 36px;
+    height: 36px;
+  }
+  .intro__advantage .info_icon p {
+    width: 170px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 426px) {
+  .intro {
+    width: 100%;
+    margin: 30px auto;
+  }
+  .intro__title-head {
+    width: 350px;
+    font-size: 20px;
+  }
+  .intro__title-info {
+    width: 320px;
+    font-size: 10px;
+    margin: 20px auto;
+  }
+  .intro__img {
+    position: relative;
+    top: 155px;
+    margin-left: 45px;
+    width: 80%;
+    height: auto;
+    z-index: -1;
+    opacity: 1;
+  }
+  .intro__imge {
+    position: absolute;
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+  }
+  .intro__advantage {
+    margin: 0 auto;
+    margin-left: -15px;
+  }
+  .intro__advantage .info_icon {
+    width: 90px;
+    margin-left: 35px;
+    margin-top: 70px;
+  }
+  .intro__advantage .info_icon svg {
+    margin-left: 10px;
+    width: 22px;
+    height: 22px;
+  }
+  .intro__advantage .info_icon p {
+    width: 80px;
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
+.refill {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 170px;
+}
+.refill__info {
+  width: 340px;
+  margin-left: 130px;
+  display: inline-block;
+}
+.refill__info .title {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(9.43deg, rgba(255, 255, 255, 0) 1.37%, #FFFFFF 39.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.refill__info .text {
+  font-family: "Lab Grotesque";
+  color: white;
+  font-size: 17px;
+  line-height: 33px;
+  text-align: left;
+}
+.refill__img {
+  display: inline-block;
+}
+.refill__img-imge {
+  width: 800px;
+  position: absolute;
+  right: 0px;
+  margin-top: -490px;
+  opacity: 0.7;
+}
+.refill__img-image {
+  position: absolute;
+  right: 70px;
+  margin-top: -460px;
+  width: 870px;
+  height: 795px;
+  z-index: -1;
+}
+
+@media (max-width: 1240px) {
+  .refill {
+    width: 90%;
+  }
+  .refill__info {
+    width: 340px;
+    margin-left: 105px;
+  }
+  .refill__img-imge {
+    width: 650px;
+    height: auto;
+    margin-top: -450px;
+  }
+  .refill__img-image {
+    right: 20px;
+    width: 700px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .refill {
+    width: 95%;
+  }
+  .refill__info {
+    width: 250px;
+    margin-left: 60px;
+  }
+  .refill__info .title {
+    font-size: 25px;
+  }
+  .refill__info .text {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .refill__img-imge {
+    width: 450px;
+    height: auto;
+    margin-top: -300px;
+    right: 10px;
+  }
+  .refill__img-image {
+    right: 20px;
+    width: 400px;
+    height: auto;
+    margin-top: -280px;
+  }
+}
+@media (max-width: 426px) {
+  .refill {
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .refill__info {
+    width: 150px;
+    margin-left: 30px;
+  }
+  .refill__info .title {
+    font-size: 20px;
+  }
+  .refill__info .text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .refill__img-imge {
+    width: 200px;
+    height: auto;
+    margin-top: -140px;
+    right: 20px;
+  }
+  .refill__img-image {
+    right: 10px;
+    width: 230px;
+    height: auto;
+    margin-top: -140px;
+  }
+}

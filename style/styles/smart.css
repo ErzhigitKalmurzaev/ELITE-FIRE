@@ -1,0 +1,85 @@
+.smart {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+.smart__title-head {
+  width: 700px;
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 250;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(19.43deg, rgba(255, 255, 255, 0) 1.37%, #FFFFFF 69.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 auto;
+  text-align: center;
+}
+.smart__title-info {
+  width: 510px;
+  font-size: 19px;
+  letter-spacing: 0.05em;
+  font-family: "Lab Grotesque";
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 30px auto;
+}
+.smart__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1240px) {
+  .smart {
+    width: 90%;
+  }
+  .smart__title-head {
+    font-size: 40px;
+  }
+  .smart__title-info {
+    font-size: 19px;
+  }
+  .smart__img {
+    margin-left: 25px;
+    width: 95%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .smart {
+    width: 95%;
+  }
+  .smart__title-head {
+    width: 550px;
+    font-size: 29px;
+  }
+  .smart__title-info {
+    font-size: 16px;
+  }
+  .smart__img {
+    height: auto;
+  }
+}
+@media (max-width: 426px) {
+  .smart {
+    width: 100%;
+    margin-top: 70px;
+  }
+  .smart__title-head {
+    width: 350px;
+    font-size: 20px;
+  }
+  .smart__title-info {
+    width: 320px;
+    font-size: 10px;
+    margin: 20px auto;
+  }
+  .smart__img {
+    width: 80%;
+    height: auto;
+  }
+}

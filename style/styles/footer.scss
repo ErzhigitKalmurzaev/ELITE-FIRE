@@ -1,0 +1,188 @@
+.footer{
+    width: 100%;
+    height: 593px;
+    background-color:rgba(18, 18, 18, 1);
+    hr{
+        width: 100%;
+        margin-top: 60px;
+        color: rgba(35, 35, 35, 1);
+        opacity: 0.1;
+    }
+    &__info{
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 75% 25%;
+        .adap_title{
+            text-align: start;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .connect_title{
+            color: rgba(148, 148, 148, 1);
+            font-size: 14px;
+        }
+        &-connect{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 40px;
+            padding-top: 30px;
+            .connect_text{
+                color: white;
+                font-size: 22px;
+            }
+        }
+        &-phone{
+            padding-top: 40px;
+            .phone_text{
+                color: white;
+                font-size: 34px;
+                margin-top: 3px;;
+            }
+            .phone_button{
+                width: 279px;
+                height: 60px;
+                border: 2px solid #CEB787;
+                background-color: rgba(18, 18, 18, 1);
+                color: white;
+                font-size: 18px;
+                margin-top: 50px;
+            }
+        }
+    }
+    &__titre{
+        width: 80%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: 20% 15% 45% 20%;
+        &-logo{
+            font-family: 'Scania Sans CY Headline';
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: white;
+        }
+        &-text{
+            color: rgba(148, 148, 148, 1);
+        }
+    }
+}
+
+@media (max-width: 1240px){
+    .footer{
+        height: auto;
+        hr{
+            margin-top: 10px;
+        }
+        &__info{
+            width: 90%;
+            &-connect{
+                row-gap: 30px;
+                padding-top: 10px;
+                .connect_text{
+                    font-size: 18px;
+                }
+            }
+            &-phone{
+                .phone_text{
+                    font-size: 25px;
+                }
+                .phone_button{
+                    width: 205px;
+                    height: 46px;
+                    font-size: 14px;
+                    margin-top: 30px;
+                }
+            }
+        }
+        &__titre{
+            width: 90%;
+            &-logo{
+                font-size: 14px;
+            }
+            &-text{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 769px){
+    .footer{
+        &__info{
+            width: 95%;
+            .connect_title{
+                color: rgba(148, 148, 148, 1);
+                font-size: 10px;
+            }
+            &-connect{
+                row-gap: 10px;
+                padding-top: 10px;
+                .connect_text{
+                    font-size: 14px;
+                }
+            }
+            &-phone{
+                .phone_text{
+                    font-size: 22px;
+                }
+                .phone_button{
+                    width: 145px;
+                    height: 32px;
+                    font-size: 10px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        &__titre{
+            width: 95%;
+            &-logo{
+                font-size: 12px;
+            }
+            &-text{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .footer{
+        &__info{
+            width: 90%;
+            .connect_title{
+                color: rgba(148, 148, 148, 1);
+                font-size: 8px;
+            }
+            &-connect{
+                row-gap: 4px;
+                padding-top: 6px;
+                .connect_text{
+                    font-size: 11px;
+                }
+            }
+            &-phone{
+                padding-top: 7px;
+                .phone_text{
+                    font-size: 18px;
+                }
+                .phone_button{
+                    width: 75px;
+                    height: 27px;
+                    font-size: 7px;
+                    margin-top: -10px;
+                }
+            }
+        }
+        &__titre{
+            width: 90%;
+            &-logo{
+                font-size: 10px;
+            }
+            &-text{
+                font-size: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+.range_field {
+  width: 400px;
+  -webkit-appearance: none;
+}
+
+.range_field::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: rgb(100, 100, 100);
+  border-radius: 0px;
+  border: 0px solid rgb(100, 100, 100);
+}
+
+.range_field::-moz-range-track {
+  width: 100%;
+  height: 1px;
+  cursor: pointer;
+  box-shadow: none;
+  background: #ffffff;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+
+.range_field::-webkit-slider-thumb {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px solid rgb(255, 207, 122);
+  height: 32px;
+  width: 32px;
+  border-radius: 5px;
+  background: rgb(255, 207, 122);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -15px;
+}
+
+.range_field::-moz-range-thumb {
+  box-shadow: none;
+  border: 0px solid rgb(255, 207, 122);
+  box-shadow: -410px 0 0 1px rgb(255, 207, 122);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: rgb(255, 207, 122);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+
+.form__box-inputs-panel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  height: 100px;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider {
+  width: 280px;
+  height: 100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+  margin-right: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.slide__text {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.slide__text img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slide a {
+  background: none;
+  border: none;
+}
+
+.slide__prev {
+  font-size: 22px;
+  color: rgb(255, 207, 122);
+  margin-right: 20px;
+  margin-top: 24px;
+}
+
+.slide__next {
+  font-size: 22px;
+  color: rgb(255, 207, 122);
+  margin-left: 30px;
+  margin-top: 24px;
+}
+
+.slider__nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 50%;
+  position: absolute;
+  margin-top: -20px;
+  width: 200px;
+  margin-left: 170px;
+  text-align: center;
+}
+
+.slider__navlink {
+  display: inline-block;
+  height: 1px;
+  width: 10px;
+  background-color: rgb(255, 207, 122);
+  margin: 0 2px 0 4px;
+}
+
+@media (max-width: 1240px) {
+  .range_field {
+    width: 300px;
+  }
+  .range_field::-webkit-slider-thumb {
+    width: 27px;
+    height: 27px;
+  }
+  .slider {
+    width: 220px;
+    height: 80px;
+    margin: auto auto;
+  }
+  .slider__nav {
+    margin-left: 100px;
+    margin-top: 1px;
+  }
+}
+@media (max-width: 769px) {
+  .range_field {
+    width: 200px;
+  }
+  .range_field::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+  .slider {
+    width: 170px;
+    height: 50px;
+    margin: auto 0;
+  }
+  .slider__nav {
+    margin-left: -10px;
+    margin-top: -35px;
+  }
+  .slide__text {
+    width: 160px;
+    height: 70px;
+    margin-left: 13px;
+  }
+  .slide__text img {
+    width: 100%;
+  }
+  .slide__next {
+    font-size: 16px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  .slide__prev {
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 426px) {
+  .slide {
+    width: 80%;
+    margin-left: 20px;
+  }
+  .slider__nav {
+    margin-left: -100px;
+    margin-top: -35px;
+  }
+  .slide__text {
+    width: 160px;
+    height: 70px;
+    margin-left: 13px;
+  }
+  .slide__text img {
+    width: 100%;
+  }
+}
