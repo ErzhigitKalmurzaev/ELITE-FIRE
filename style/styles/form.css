@@ -45,7 +45,7 @@
   text-transform: uppercase;
 }
 .form__box-inputs {
-  width: 410px;
+  width: 430px;
 }
 .form__box-inputs-length label {
   color: white;
@@ -60,10 +60,10 @@
   margin-left: 20px;
 }
 .form__box-inputs-checkbox-block label {
-  width: 60%;
+  width: 70%;
   color: white;
   margin-top: 7px;
-  font-size: 16px;
+  font-size: 15px;
 }
 .form__box-inputs-checkbox-block label input[type=checkbox] {
   display: none;
