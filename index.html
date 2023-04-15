@@ -135,7 +135,12 @@
             </div>
           </div>
           <div class="img">
-            <img src="assets/image/Rectangle 41.png" alt="" class="dark_img">
+            <div class="swagger">
+              <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
+              <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              <i class="fa-solid fa-chevron-left swagger__left"></i>
+              <i class="fa-solid fa-chevron-right swagger__right"></i>
+            </div>
           </div>
           <div class="equiment">
             <p class="equiment__title">Стандартная комплектация</p>
@@ -159,14 +164,24 @@
               <p class="solution__info">Напольные отдельно стоящие камины.<br> 
                 Настенные очаги которые вешаются как ТВ. Подвесные модели.
               </p>
-              <img src="assets/image/Rectangle 41.png" alt="" class="dark_img">
+              <div class="swagger">
+                <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
+                <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+                <i class="fa-solid fa-chevron-left swagger__left"></i>
+                <i class="fa-solid fa-chevron-right swagger__right"></i>
+              </div>
           </div>
           <div class="solution">
             <p class="solution__title">Аксессуары</p>
             <p class="solution__info">Защитные экраны, Дверцы, Стемалит, Дрова,<br> 
               Камни, Кастомные пульты
             </p>
-            <img src="assets/image/Rectangle 41.png" alt="" class="dark_img">
+            <div class="swagger">
+              <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
+              <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              <i class="fa-solid fa-chevron-left swagger__left"></i>
+              <i class="fa-solid fa-chevron-right swagger__right"></i>
+            </div>
           </div>
         </div>
     </section>
@@ -205,39 +220,19 @@
               <p class="form__box-title">Выберите длину</p>
               <div>
                 <label for="range">0.5 м</label>
-                <input type="range" name="range" class="range_field" value="4" max="10" min="0.5">
+                  <input class="range" type="range" name="range" value="0" min="0" max="1000"></input>
                 <label for="range">10 м</label>
               </div>
             </div>
             <div class="form__box-inputs-panel">
                 <p class="form__box-title">Лицевая сторона</p>
                 <div class="form__box-inputs-panel-block">
-                  <p class="slide__prev" href="#slides__3" title="Prev"><i class="fa-solid fa-chevron-left"></i></p>
-                  <div class="slider-container">
-                    <div class="slider">
-                      <div class="slides">
-                        <div id="slides__1" class="slide">
-                          <span class="slide__text"><img src="assets/image/rend 1.png" alt=""></span>
-                        </div>
-                        <!-- <div id="slides__2" class="slide">
-                          <span class="slide__text">2</span>
-                        </div>
-                        <div id="slides__3" class="slide">
-                          <span class="slide__text">3</span>
-                        </div>
-                        <div id="slides__4" class="slide">
-                          <span class="slide__text">4</span>
-                        </div> -->
-                      </div>
-                      <div class="slider__nav">
-                        <a class="slider__navlink" href="#slides__1"></a>
-                        <a class="slider__navlink" href="#slides__2"></a>
-                        <a class="slider__navlink" href="#slides__3"></a>
-                        <a class="slider__navlink" href="#slides__4"></a>
-                      </div>
+                  <p class="slide__prev"><i class="fa-solid fa-chevron-left swagger__left"></i></p>
+                    <div class="slide">
+                        <img src="assets/image/rend 1.png" alt="" class="swagger__img active">
+                        <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img">
                     </div>
-                  </div>
-                  <p class="slide__next" href="#slides__1" title="Prev"><i class="fa-solid fa-chevron-right"></i></p>
+                  <p class="slide__next"><i class="fa-solid fa-chevron-right swagger__right"></i></p>
                 </div>
             </div>
             <div class="form__box-inputs-checkbox">
@@ -343,5 +338,6 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/607d6396ee.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

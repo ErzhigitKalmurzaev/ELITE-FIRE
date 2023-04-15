@@ -21,8 +21,10 @@
 .info .container .fuel_block .img {
   margin: 35px auto;
 }
+.info .container .description {
+  margin-top: 0;
+}
 .info .container .description .title {
-  margin-top: -20px;
   font-size: 24px;
   font-weight: 500;
   line-height: 44px;
@@ -60,9 +62,27 @@
       grid-row-start: 2;
   -ms-grid-row-span: 2;
   grid-row-end: 4;
+  margin-top: 40px;
 }
-.info .container .img img {
-  margin-top: 20px;
+.info .container .swagger {
+  width: 500px;
+  position: relative;
+}
+.info .container .swagger img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.info .container .swagger .active {
+  display: block;
+}
+.info .container .swagger i {
+  font-size: 28px;
+  color: rgb(255, 207, 122);
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+  margin-left: 15px;
 }
 .info .container .equiment {
   margin: auto 0;
@@ -94,6 +114,9 @@
 .info .container .solution__info {
   font-size: 14px;
   line-height: 27px;
+}
+.info .container .solution .swiper {
+  margin-left: 0;
 }
 
 @media (max-width: 1240px) {
@@ -178,6 +201,25 @@
     font-size: 12px;
     line-height: 24px;
   }
+  .info .container .swagger {
+    width: 380px;
+    position: relative;
+  }
+  .info .container .swagger img {
+    width: 100%;
+    height: 100%;
+  }
+  .info .container .swagger i {
+    font-size: 22px;
+    color: rgb(255, 207, 122);
+    position: relative;
+    bottom: 40px;
+    left: 5px;
+    margin-left: 15px;
+  }
+  .swiper {
+    width: 370px;
+  }
 }
 @media (max-width: 769px) {
   .info {
@@ -189,11 +231,11 @@
     grid-template-columns: 1fr 1fr;
   }
   .info .container .fuel_block .title {
-    font-size: 22px;
+    font-size: 21px;
     font-weight: 500;
   }
   .info .container .fuel_block .info {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
     margin: 25px 0;
   }
@@ -212,7 +254,7 @@
   }
   .info .container .description .info {
     margin: 0;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 26px;
   }
   .info .container .option {
@@ -220,7 +262,7 @@
   }
   .info .container .option .title {
     color: rgb(117, 117, 117);
-    font-size: 22px;
+    font-size: 21px;
   }
   .info .container .option .box {
     display: -ms-grid;
@@ -232,7 +274,7 @@
   .info .container .option .box .item {
     margin: 0;
     line-height: 26px;
-    font-size: 13px;
+    font-size: 11px;
   }
   .info .container .dark_img {
     width: 320px;
@@ -241,14 +283,13 @@
     padding-left: 20px;
   }
   .info .container .img img {
-    margin-top: 40px;
     height: auto;
   }
   .info .container .equiment {
     padding-left: 20px;
   }
   .info .container .equiment__title {
-    font-size: 24px;
+    font-size: 21px;
     color: rgb(117, 117, 117);
     line-height: 24px;
   }
@@ -261,8 +302,24 @@
   }
   .info .container .equiment__box-item {
     margin: 0;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 26px;
+  }
+  .info .container .swagger {
+    width: 320px;
+    position: relative;
+  }
+  .info .container .swagger img {
+    width: 100%;
+    height: 100%;
+  }
+  .info .container .swagger i {
+    font-size: 16px;
+    color: rgb(255, 207, 122);
+    position: relative;
+    bottom: 30px;
+    left: 2px;
+    margin-left: 15px;
   }
 }
 @media (max-width: 426px) {
@@ -354,5 +411,21 @@
     font-size: 10px;
     line-height: 18px;
     text-align: center;
+  }
+  .info .container .swagger {
+    width: 320px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .info .container .swagger img {
+    width: 100%;
+    height: 100%;
+  }
+  .info .container .swagger i {
+    font-size: 16px;
+    color: rgb(255, 207, 122);
+    position: relative;
+    margin: 0 auto;
+    padding: 4px;
   }
 }
