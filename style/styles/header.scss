@@ -8,6 +8,7 @@
   color: #FFF;
   height: 50px;
   padding: 1em;
+  padding-left: 0;
   &__logo{
     font-family: 'Scania Sans CY Headline';
     font-size: 20px;
@@ -15,43 +16,138 @@
     font-weight: 400;
     line-height: 70px;
     letter-spacing: 0.05em;
+    display: flex;
+    text-align: left;
+    &-text{
+      font-family: 'Lab Grotesque';
+      margin-left: 40px;
+      margin-top: 15px;
+      width: 40px;
+      line-height: 20px;
+      font-size: 12px;
+      color: rgba(109, 109, 109, 1);
+      letter-spacing: 0.05em;
+    }
+  }
+  &__links-block{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
   &__links{
     text-decoration: none;
     color: rgba(148, 148, 148, 1);
     font-size: 16px;
+    margin-top: 15px;
   }
   &__links:hover{
     color: rgba(255, 207, 122, 1);
     transition: color 0.3s ease-in-out;
   }
+  &__burger{
+    display: none;
+  }
+  &__modal{
+    position: absolute;
+    display: none;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+    background: #1d1d1c;
+    i{
+      margin-top: 12px;
+    }
+  }
 }
 
-@media (max-width: 1200px) {
+@keyframes ani {
+  0% {transform: translateY(-150%);}
+  100% {transform: translateY(0);}
+}
+@keyframes ani2 {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-350%);}
+}
+
+@media (max-width: 1300px) {
+  .header{
+    width: 80%;
+    margin: 30px auto;
+    height: 40px;
+    &__logo{
+      font-size: 19px;
+      &-text{
+        font-size: 10px;
+      }
+    }
+    &__links{
+      font-size: 15px;
+    }
+    .menu{
+      &__call-button{
+        width: 38px;
+        height: 38px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px){
   .header{
     width: 90%;
     margin: 30px auto;
     height: 40px;
     &__logo{
       font-size: 19px;
+      &-text{
+        display: none;
+      }
     }
     &__links{
-      font-size: 15px;
+      font-size: 14px;
+    }
+    .menu{
+      &__call-button{
+        width: 34px;
+        height: 34px;
+        margin-top: 5px;
+      }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 886px) {
   .header{
-    width: 95%;
+    width: 90%;
     margin: 30px auto;
     height: 40px;
+    padding-left: 1em;
     &__logo{
       font-size: 16px;
+      &-text{
+        display: none;
+      }
     }
     &__links{
       font-size: 11.5px;
     }
+  }
+}
+
+@media (max-width: 750px) {
+  .header{
+    &__links-block{
+      display: none;
+    }
+    &__burger{
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 576px){
+  .header{
+    width: 100%;
   }
 }
 
@@ -62,6 +158,11 @@
     height: 40px;
     &__links{
       font-size: 10px;
+    }
+  }
+  .menu{
+    &__call-button{
+      display: none;
     }
   }
 }
@@ -84,6 +185,33 @@
       margin: auto 0;
     }
   }
+}
+
+.header__burger{
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+  width: 28px;
+  height: 3.3px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 1.5px;
+  transition: 0.15s;
+} 
+
+.change .bar1{
+  transform: rotate(-45deg) translate(-19px, 20.5px);
+  transition: 0.3s;
+}
+
+.change .bar2{
+  opacity: 0;
+  transition: 0s;
+}
+
+.change .bar3{
+  transform: rotate(45deg) translate(-15px, -19.5px);
+  transition: 0.3s;
 }
 
 .menu > li {

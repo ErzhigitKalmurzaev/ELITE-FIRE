@@ -13,6 +13,7 @@
   color: #FFF;
   height: 50px;
   padding: 1em;
+  padding-left: 0;
 }
 .header__logo {
   font-family: "Scania Sans CY Headline";
@@ -21,19 +22,121 @@
   font-weight: 400;
   line-height: 70px;
   letter-spacing: 0.05em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+.header__logo-text {
+  font-family: "Lab Grotesque";
+  margin-left: 40px;
+  margin-top: 15px;
+  width: 40px;
+  line-height: 20px;
+  font-size: 12px;
+  color: rgb(109, 109, 109);
+  letter-spacing: 0.05em;
+}
+.header__links-block {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header__links {
   text-decoration: none;
   color: rgb(148, 148, 148);
   font-size: 16px;
+  margin-top: 15px;
 }
 .header__links:hover {
   color: rgb(255, 207, 122);
   -webkit-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
+.header__burger {
+  display: none;
+}
+.header__modal {
+  position: absolute;
+  display: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 90%;
+  height: auto;
+  background: #1d1d1c;
+}
+.header__modal i {
+  margin-top: 12px;
+}
 
-@media (max-width: 1200px) {
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes ani {
+  0% {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes ani2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-350%);
+            transform: translateY(-350%);
+  }
+}
+@keyframes ani2 {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-350%);
+            transform: translateY(-350%);
+  }
+}
+@media (max-width: 1300px) {
+  .header {
+    width: 80%;
+    margin: 30px auto;
+    height: 40px;
+  }
+  .header__logo {
+    font-size: 19px;
+  }
+  .header__logo-text {
+    font-size: 10px;
+  }
+  .header__links {
+    font-size: 15px;
+  }
+  .header .menu__call-button {
+    width: 38px;
+    height: 38px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 1100px) {
   .header {
     width: 90%;
     margin: 30px auto;
@@ -42,21 +145,46 @@
   .header__logo {
     font-size: 19px;
   }
+  .header__logo-text {
+    display: none;
+  }
   .header__links {
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .header .menu__call-button {
+    width: 34px;
+    height: 34px;
+    margin-top: 5px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 886px) {
   .header {
-    width: 95%;
+    width: 90%;
     margin: 30px auto;
     height: 40px;
+    padding-left: 1em;
   }
   .header__logo {
     font-size: 16px;
   }
+  .header__logo-text {
+    display: none;
+  }
   .header__links {
     font-size: 11.5px;
+  }
+}
+@media (max-width: 750px) {
+  .header__links-block {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
   }
 }
 @media (max-width: 426px) {
@@ -67,6 +195,9 @@
   }
   .header__links {
     font-size: 10px;
+  }
+  .menu__call-button {
+    display: none;
   }
 }
 .menu {
@@ -90,6 +221,40 @@
 .menu__call-button i {
   font-size: 17px;
   margin: auto 0;
+}
+
+.header__burger {
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 28px;
+  height: 3.3px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 1.5px;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-19px, 20.5px);
+          transform: rotate(-45deg) translate(-19px, 20.5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.change .bar2 {
+  opacity: 0;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-15px, -19.5px);
+          transform: rotate(45deg) translate(-15px, -19.5px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu > li {

@@ -11,26 +11,43 @@
     <header class="header">
         <div class="header__logo">
           ELITE FIRE
+          <p class="header__logo-text">
+            Автоматические биокамины
+          </p>
         </div>
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
-        <ul class="menu">
-          <li><a class="header__links" href="#ПРОДУКЦИЯ">ПРОДУКЦИЯ</a></li>
+        <div class="header__links-block">
+          <a class="header__links" href="#ПРОДУКЦИЯ">ПРОДУКЦИЯ</a>
+          <a class="header__links" href="#КОНСТРУКТОР">КОНСТРУКТОР</a>
+          <a class="header__links" href="#ОПЫТ">ОПЫТ</a>
+          <a class="header__links" href="#КОНТАКТЫ">КОНТАКТЫ</a>
+          <button class="menu__call-button"><i class="fa-solid fa-phone"></i></button>
+        </div>
+        <div class="header__burger">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="header__modal">
+          <a class="header__links" href="#ПРОДУКЦИЯ">ПРОДУКЦИЯ</a>
+          <a class="header__links" href="#КОНСТРУКТОР">КОНСТРУКТОР</a>
+          <a class="header__links" href="#ОПЫТ">ОПЫТ</a>
+          <a class="header__links" href="#КОНТАКТЫ">КОНТАКТЫ</a>
+          <i class="fa-solid fa-x close-button"></i>
+        </div>
+    </header>
+
+    <!-- <li><a class="header__links" href="#ПРОДУКЦИЯ">ПРОДУКЦИЯ</a></li>
           <li><a class="header__links" href="#КОНСТРУКТОР">КОНСТРУКТОР</a></li>
           <li><a class="header__links" href="#ОПЫТ">ОПЫТ</a></li>
           <li><a class="header__links" href="#КОНТАКТЫ">КОНТАКТЫ</a></li>
-          <li><button class="menu__call-button"><i class="fa-solid fa-phone"></i></button></li>
-        </ul>
-    </header>
+          <li><button class="menu__call-button"><i class="fa-solid fa-phone"></i></button></li> -->
 
     <section class="oppening">
         <div class="oppening__info">
             <p class="oppening__title">
               АВТОМАТИЧЕСКИЕ БИОКАМИНЫ
             </p>
-            <p class="oppening__price">OT <p class="oppening__price-text">99 000 ₽</p></p>
+            <div class="oppening__price">OT <p class="oppening__price-text">99 000 ₽</p></div>
             <div class="oppening__advantage">
                 <div class="info_icon">
                   <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,9 +109,14 @@
             </div>
         </div>
         <div class="refill__img">
-          <img src="assets/image/Group 4.png" alt="" class="refill__img-imge">
-          <img src="assets/image/Group 8.png" alt="" class="refill__img-image">
+          <img src="assets/image/refill.png" alt="" class="refill__img-imge">
         </div>
+        <div class="refill__instruction">
+          <img src="assets/image/Vector (2).png" alt="" class="refill__instruction-img">
+          <img src="assets/image/Line 2.png" alt="" class="refill__instruction-img cntr">
+          <img src="assets/image/power-button (1) 1.png" alt="" class="refill__instruction-img">
+          <p class="refill__instruction-text">Достаточно вставить шланг Нажать кнопку</p>
+      </div>
     </section>
 
     <section class="smart">
@@ -136,8 +158,10 @@
           </div>
           <div class="img">
             <div class="swagger">
-              <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
-              <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              <div class="swagger__block">
+                <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img">
+                <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              </div>
               <i class="fa-solid fa-chevron-left swagger__left"></i>
               <i class="fa-solid fa-chevron-right swagger__right"></i>
             </div>
@@ -165,8 +189,10 @@
                 Настенные очаги которые вешаются как ТВ. Подвесные модели.
               </p>
               <div class="swagger">
-                <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
-                <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+                <div class="swagger__block">
+                  <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img">
+                  <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+                </div>
                 <i class="fa-solid fa-chevron-left swagger__left"></i>
                 <i class="fa-solid fa-chevron-right swagger__right"></i>
               </div>
@@ -177,8 +203,10 @@
               Камни, Кастомные пульты
             </p>
             <div class="swagger">
-              <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img active">
-              <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              <div class="swagger__block">
+                <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img">
+                <img src="assets/image/DSC_9851 1.png" alt="" class="swagger__img">
+              </div>
               <i class="fa-solid fa-chevron-left swagger__left"></i>
               <i class="fa-solid fa-chevron-right swagger__right"></i>
             </div>
@@ -220,19 +248,21 @@
               <p class="form__box-title">Выберите длину</p>
               <div>
                 <label for="range">0.5 м</label>
-                  <input class="range" type="range" name="range" value="0" min="0" max="1000"></input>
+                  <input class="range" type="range" name="range" value="0" min="0" max="100"></input>
                 <label for="range">10 м</label>
               </div>
             </div>
             <div class="form__box-inputs-panel">
                 <p class="form__box-title">Лицевая сторона</p>
                 <div class="form__box-inputs-panel-block">
-                  <p class="slide__prev"><i class="fa-solid fa-chevron-left swagger__left"></i></p>
+                  <p class="slide__prev"><i class="fa-solid fa-chevron-left slide__left"></i></p>
                     <div class="slide">
-                        <img src="assets/image/rend 1.png" alt="" class="swagger__img active">
-                        <img src="assets/image/Rectangle 41.png" alt="" class="swagger__img">
+                        <div class="slide__block">
+                          <img src="assets/image/rend 1.png" alt="" class="slide__img">
+                          <img src="assets/image/Rectangle 41.png" alt="" class="slide__img">
+                        </div>
                     </div>
-                  <p class="slide__next"><i class="fa-solid fa-chevron-right swagger__right"></i></p>
+                  <p class="slide__next"><i class="fa-solid fa-chevron-right slide__right"></i></p>
                 </div>
             </div>
             <div class="form__box-inputs-checkbox">
@@ -297,8 +327,10 @@
                 <p class="form__box-title">Стоимость</p>
                 <p class="form__button-price-text">99 000₽</p>
               </div>
-              <button class="form__button-btn"><b>Оставить заявку</b></button>
-          </div>  
+               <div>
+                <button class="form__button-btn"><b>Оставить заявку</b></button>
+               </div>   
+            </div>  
     </section>
 
     <footer class="footer">

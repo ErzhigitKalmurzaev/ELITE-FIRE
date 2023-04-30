@@ -1,28 +1,26 @@
 .range_field{
     width: 350px;
+    height: 15px;
     display: flex;
     -webkit-appearance: none;
 }
 .range {
   width: 300px;
-  height: 15px;
+  height: 2px;
   -webkit-appearance: none;
-  background: #111;
-  outline: none;
+  outline: 0;
   border-radius: 15px;
-  overflow: hidden;
-  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  background: rgba(148, 148, 148, 1);
   margin: auto 10px;
+  z-index: -1;
 }
 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: rgba(255, 207, 122, 1);
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-image: radial-gradient(circle, rgba(255, 207, 122, 1) 100%, rgba(255, 207, 122, 1));
   cursor: pointer;
-  border: 4px solid #333;
-  box-shadow: -407px 0 0 400px rgba(255, 207, 122, 1);
 }
 
 
@@ -36,12 +34,16 @@
 .slide {
   width: 280px;
   height: 70px;
-  .active{
-    display: block;
+  overflow: hidden;
+  &__block{
+    width: 200%;
+    position: relative;
+    display: flex;
+    left: 0;
+    transition: all ease 0.7s;
   }
 }
-.swagger__img{
-  display: none;
+.slide__img{
   width: 100%;
   height: 70px;
 }
@@ -80,7 +82,7 @@
   .slide__prev{
     margin-top: 0px;
   }
-  .swagger__img{
+  .slide__img{
     height: 60px;
   }
 }
@@ -91,7 +93,7 @@
       font-size: 14px;
     }
   }
-  .range_field{
+  .range{
     width: 200px;
   }
   .range_field::-webkit-slider-thumb{
@@ -99,8 +101,8 @@
     height: 20px;
   }
   .slide{
-    width: 170px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
   }
   .slide__next{
     font-size: 16px;
@@ -115,9 +117,38 @@
   }
 }
 
+@media (max-width: 636px){
+  .range{
+    width: 130px;
+    height: 10px;
+  }
+  .slide{
+    width: 140px;
+  }
+  .slide__img{
+    height: auto;
+  }
+}
+
+@media (max-width: 564px){
+  .range{
+    width: 240px;
+    margin: 0 auto;
+  }
+  .slide{
+    width: 240px;
+  }
+  .slide__img{
+    height: auto;
+  }
+}
+
 @media (max-width: 426px){
   .slide{
     width: 70%;
+  }
+  .slide__img{
+    height: 40px;
   }
   .form__box-inputs-length{
     padding-left: 0;

@@ -68,9 +68,9 @@
     }
 }
 
-@media (max-width: 1240px){
+@media (max-width: 1300px){
     .intro{
-        width: 90%;
+        width: 80%;
         &__title{
             &-head{
                 font-size: 40px;
@@ -105,9 +105,9 @@
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1100px){
     .intro{
-        width: 95%;
+        width: 90%;
         &__title{
             &-head{
                 width: 550px;
@@ -133,19 +133,19 @@
             height: auto;
         }
         &__advantage{
-            margin: 0 auto;
+            margin: -60px auto;
             margin-left: -20px;
             .info_icon{
-                width: 220px;
+                width: 223px;
                 margin-left: 35px;
                 margin-top: -100px;
                 svg{
-                    width: 36px;
-                    height: 36px;
+                    width: 40px;
+                    height: 40px;
                 }
                 p{
-                    width: 170px;
-                    font-size: 12px;
+                    width: 150px;
+                    font-size: 14px;
                     line-height: 24px;
                 }
             }
@@ -153,18 +153,106 @@
     }
 }
 
-@media (max-width: 426px){
+@media (max-width: 900px){
+    .intro{
+        &__advantage{
+            margin: 0 auto;
+            margin-left: -20px;
+            .info_icon{
+                width: 223px;
+                margin-left: 35px;
+                margin-top: -100px;
+                svg{
+                    width: 40px;
+                    height: 40px;
+                }
+                p{
+                    width: 150px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px){
+    .intro{
+        margin-top: 50px;
+        &__advantage{
+            margin: 0 auto;
+            margin-left: -20px;
+            .info_icon{
+                width: 223px;
+                margin-left: 35px;
+                margin-top: -10%;
+                svg{
+                    width: 30px;
+                    height: 30px;
+                }
+                p{
+                    width: 150px;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 625px){
+    .intro{
+        width: 90%;
+        margin: 40px auto;
+        &__title{
+            &-head{
+                width: 450px;
+                font-size: 25px;
+            }
+            &-info{
+                width: 320px;
+                font-size: 10px;
+                margin: 20px auto;
+            }
+        }
+        &__advantage{
+            margin: 0 auto;
+            margin-left: -15px;
+            margin-top: 20px;
+            .info_icon{
+                width: 90px;
+                margin-left: 25px;
+                svg{
+                    margin-left: 10px;
+                    width: 22px;
+                    height: 22px;
+                }
+                p{
+                    width: 80px;
+                    font-size: 8px;
+                    line-height: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px){
+    .intro{
+        width: 100%;
+    }
+}
+
+@media (max-width: 476px){
     .intro{
         width: 100%;
         margin: 30px auto;
         &__title{
             &-head{
-                width: 350px;
-                font-size: 20px;
+                width: 300px;
+                font-size: 18px;
             }
             &-info{
-                width: 320px;
-                font-size: 10px;
+                width: 280px;
+                font-size: 9px;
                 margin: 20px auto;
             }
         }
@@ -187,16 +275,17 @@
             margin: 0 auto;
             margin-left: -15px;
             .info_icon{
-                width: 90px;
-                margin-left: 35px;
-                margin-top: 70px;
+                width: 80px;
+                margin-left: 15px;
+                margin-top: 90px;
                 svg{
                     margin-left: 10px;
-                    width: 22px;
-                    height: 22px;
+                    width: 18px;
+                    height: 18px;
+
                 }
                 p{
-                    width: 80px;
+                    width: 75px;
                     font-size: 8px;
                     line-height: 12px;
                 }
@@ -209,6 +298,7 @@
     width: 85%;
     margin: 0 auto;
     margin-top: 170px;
+    display: flex;
     &__info{
         width: 340px;
         margin-left: 130px;
@@ -236,105 +326,112 @@
     &__img{
         display: inline-block;
         &-imge{
-            width: 800px;
+            width: 700px;
             position: absolute;
             right: 0px;
-            margin-top: -490px;
+            margin-top: -240px;
             opacity: 0.7; 
         }
-        &-image{
-            position: absolute;
-            right: 70px;
-            margin-top: -460px; 
-            width: 870px;
-            height: 795px;
-            z-index: -1;
+    }
+    &__instruction{
+        width: 220px;
+        position: relative;
+        top: 270px;
+        display: inline-block;
+        &-img{
+            width: 22px;
+            height: 22px;
+        }
+        .cntr{
+            width: 25px;
+            height: 1px;
+            margin: 10px 25px;
+        }
+        &-text{
+            color: white;
+            font-size: 15px;
+            line-height: 22px;
         }
     }
 }
 
-@media (max-width: 1240px){
+@media (max-width: 1280px){
     .refill{
         width: 90%;
         &__info{
             width: 340px;
-            margin-left: 105px;     
+            margin-left: 105px;  
+            .text{
+                font-size: 15px;
+            }
+            .title{
+                font-size: 27px;
+            }   
         }
         &__img{
             &-imge{
-                width: 650px;
+                width: 600px;
                 height: auto;
-                margin-top: -450px;
+                margin-top: -200px;
             }
-            &-image{
-                right: 20px;
-                width: 700px;
+        }
+        &__instruction{
+            width: 180px;
+            position: relative;
+            top: 240px;
+            display: inline-block;
+            &-img{
+                width: 20px;
+                height: 20px;
+            }
+            .cntr{
+                width: 22px;
+                height: 1px;
+                margin: 9px 17px;
+            }
+            &-text{
+                color: white;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+}
+@media (max-width: 1120px){
+    .refill{
+        width: 90%;
+        &__info{
+            width: 340px;
+            margin-left: 12%;  
+            .title{
+                font-size: 26px;
+            }  
+            .text{
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+        &__img{
+            width: 100%;
+            height: auto;
+            position: relative;
+            margin-left: 5%;
+            &-imge{
+                width: 520px;
                 height: auto;
+                margin-top: -150px;
             }
+        }
+        &__instruction{
+            display: none;
         }
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 990px){
     .refill{
-        width: 95%;
-        &__info{
-            width: 250px;
-            margin-left: 60px;
-            .title{
-                font-size: 25px;
-            }
-            .text{
-                font-size: 13px;
-                line-height: 22px;
-            }
-        }
-        &__img{
-            &-imge{
-                width: 450px;
-                height: auto;
-                margin-top: -300px;
-                right: 10px
-            }
-            &-image{
-                right: 20px;
-                width: 400px;
-                height: auto;
-                margin-top: -280px;
-            }
-        }
+        display: none;
+        
     }
 }
 
-@media (max-width: 426px){
-    .refill{
-        width: 100%;
-        margin-top: 50px;
-        margin-left: 15px;
-        &__info{
-            width: 150px;
-            margin-left: 30px;
-            .title{
-                font-size: 20px;
-            }
-            .text{
-                font-size: 10px;
-                line-height: 12px;
-            }
-        }
-        &__img{
-            &-imge{
-                width: 200px;
-                height: auto;
-                margin-top: -140px;
-                right: 20px;
-            }
-            &-image{
-                right: 10px;
-                width: 230px;
-                height: auto;
-                margin-top: -140px;
-            }
-        }
-    }
-}

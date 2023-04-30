@@ -67,13 +67,27 @@
     }
 }
 
+@media (max-width: 700px){
+    .catalog{
+        width: 95%;
+        margin: 50px auto;
+        &__title{
+            font-size: 22px;
+            line-height: 33px;
+        }
+        .btn{
+           margin: 0 auto; 
+        }
+    }
+}
+
 @media (max-width: 769px){
     .catalog{
         width: 95%;
         color: white;
         margin: 90px auto;
         .btn{
-            margin-left: 33%;
+            margin-left: 35%;
         }
     }
     .images{
@@ -111,12 +125,12 @@
         color: white;
         margin: 90px auto;
         &__title{
-            width: 383px;
+            width: 300px;
             margin: 20px auto;
-            font-size: 20px;
+            font-size: 19px;
         }
         .btn{
-            margin-left: 35%;
+            margin-left: 30%;
         }
     }
     .images{
@@ -126,7 +140,7 @@
             font-family: 'Lab Grotesque';
             font-style: normal;
             font-weight: 250;
-            font-size: 20px;
+            font-size: 16px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
             background: linear-gradient(9.43deg, rgba(255, 255, 255, 0) 1.37%, #FFFFFF 39.78%);

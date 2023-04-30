@@ -16,7 +16,7 @@
         grid-template-columns: 50% 50%;
         column-gap: 80px;
         &-img{
-            margin: auto 0;
+            margin-top: 20px;
             img{
                 width: 100%;
                 height: auto;
@@ -45,8 +45,10 @@
                 margin-left: 20px;
                 label{
                     width: 70%;
+                    height: 100%;
                     color: white;
                     margin-top: 7px;
+                    position: relative;
                     font-size: 15px;
                     input[type=checkbox]{
                         display: none;
@@ -71,7 +73,6 @@
                         background-color: rgba(255, 207, 122, 1);
                         color: black;
                         font-size: 18px;
-                        font-weight: 500;
                         text-align: center;
                     }
                 }
@@ -128,8 +129,10 @@
                 font-size: 10px;
             }
             &-inputs{
+                width: 350px;
                 &-checkbox-block{
                     label{
+                        width: 100%;
                         font-size: 13px;
                         span:before{
                             width: 18px;
@@ -137,6 +140,51 @@
                         }
                     }
                 }
+            }
+        }
+        &__button{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 20px;
+            padding-left: 40px;
+            &-price-text{
+                font-size: 33px;
+                line-height: 0;
+                color: rgba(255, 207, 122, 1);
+            }
+            &-btn{
+                margin: auto auto;
+                width: 200px;
+                height: 50px;
+                border-radius: 2px;
+                font-style: normal;
+                font-size: 18px;
+                font-weight: 500;
+                background-color: rgba(236, 207, 148, 1);
+            }
+        }
+    }
+}
+@media (max-width: 920px){
+    .form{
+        &__button{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 20px;
+            &-price-text{
+                font-size: 24px;
+                line-height: 0;
+                color: rgba(255, 207, 122, 1);
+            }
+            &-btn{
+                margin: auto auto;
+                width: 144px;
+                height: 45px;
+                border-radius: 2px;
+                font-style: normal;
+                font-size: 14px;
+                font-weight: 500;
+                background-color: rgba(236, 207, 148, 1);
             }
         }
     }
@@ -153,14 +201,14 @@
                 font-size: 8px;
             }
             &-inputs{
-                width: 330px;
+                width: 270px;
                 &-checkbox-block{
                     label{
-                        width: 80%;
-                        font-size: 12px;
+                        width: 100%;
+                        font-size: 10px;
                         span:before{
-                            width: 15px;
-                            height: 15px;
+                            width: 13px;
+                            height: 13px;
                         }
                     }
                 }
@@ -188,15 +236,77 @@
         }
     }
 }
+@media (max-width: 636px){
+    .form{
+        &__box{
+            grid-template-columns: 45% 55%;
+            column-gap: 30px;
+            
+            &-title{
+                font-size: 8px;
+            }
+            &-inputs{
+                width: 270px;
+                &-checkbox-block{
+                    label{
+                        width: 100%;
+                        font-size: 10px;
+                        span:before{
+                            width: 13px;
+                            height: 13px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 0px;
+            &-length-num{
+                font-size: 18px;
+                color: white;
+                font-weight: 500;
+            }
+            &-panel-color{
+                width: 25px;
+                height: 25px;
+                background-color: rgba(184, 84, 42, 1);
+                border-radius: 50%;
+            }
+        }
+        &__button{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 0px;
+            padding-left: 0px;
+            &-price-text{
+                font-size: 18px;
+                line-height: 0;
+                color: rgba(255, 207, 122, 1);
+            }
+            &-btn{
+                margin: auto auto;
+                width: 104px;
+                height: 30px;
+                border-radius: 2px;
+                font-style: normal;
+                font-size: 10px;
+                font-weight: 500;
+                background-color: rgba(236, 207, 148, 1);
+            }
+        }
+    }
+}
 
-@media (max-width: 426px){
+@media (max-width: 564px){
     .form{
         width: 100%;
         display: block;
         &__box{
-            width: 100%;
+            width: 80%;
             display: block;
-            padding-left: 64px;
+            margin-left: 20%;
             &-img{
                 display: none;
             }
@@ -204,9 +314,12 @@
                 font-size: 8px;
             }
             &-inputs{
-                width: 100%;
-                margin: 0 auto;
+                width: 95%;
+                &-checkbox{
+                    margin-top: 40px;
+                }
                 &-checkbox-block{
+                    margin-left: 20px;
                     label{
                         width: 80%;
                         font-size: 12px;
@@ -219,7 +332,7 @@
             }
         }
         &__info{
-            padding-left: 64px;
+            margin-left: 110px;
             padding-top: 20px;
             &-length-num{
                 font-size: 16px;
@@ -230,7 +343,7 @@
             }
         }
         &__button{
-            padding-left: 64px;
+            margin-left: 110px;
             &-price-text{
                 font-size: 18px;
             }
@@ -239,6 +352,141 @@
                 height: 30px;
                 margin-left: 0;
                 margin-top: 33px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 426px){
+    .form{
+        width: 100%;
+        display: block;
+        &__box{
+            width: 75%;
+            display: block;
+            margin: 0 auto;
+            &-img{
+                display: none;
+            }
+            &-title{
+                font-size: 8px;
+            }
+            &-inputs{
+                width: 100%;
+                margin: 0 auto;
+                &-panel-block{
+                    margin-left: 20px;
+                }
+                &-checkbox-block{
+                    margin-left: 20px;
+                    label{
+                        width: 100%;
+                        font-size: 10px;
+                        span:before{
+                            margin-right: 10px;
+                            width: 15px;
+                            height: 15px;
+                        }
+                        [type=checkbox]:checked + span:before {
+                            content: "+";
+                            background-color: rgba(255, 207, 122, 1);
+                            color: black;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            width: 75%;
+            margin: 0 auto;
+            padding-top: 20px;
+            &-length-num{
+                font-size: 16px;
+            }
+            &-panel-color{
+                width: 23px;
+                height: 23px;
+            }
+        }
+        &__button{
+            width: 75%;
+            margin: 0 auto;
+            &-price-text{
+                font-size: 18px;
+            }
+            &-btn{
+                width: 67px;
+                height: 30px;
+                margin-left: 0;
+                margin-top: 33px;
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px){
+    .form{
+        width: 100%;
+        display: block;
+        &__box{
+            width: 78%;
+            display: block;
+            margin: 0 auto;
+            &-img{
+                display: none;
+            }
+            &-title{
+                font-size: 8px;
+            }
+            &-inputs{
+                width: 100%;
+                margin: 0 auto;
+                &-panel-block{
+                    margin-left: 15px;
+                }
+                &-checkbox-block{
+                    label{
+                        width: 100%;
+                        font-size: 10px;
+                        span:before{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &__info{
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            &-length-num{
+                font-size: 16px;
+            }
+            &-panel-color{
+                width: 23px;
+                height: 23px;
+            }
+        }
+        &__button{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            &-price-text{
+                font-size: 18px;
+            }
+            &-btn{
+                width: 85px;
+                height: 32px;
+                margin-left: 0;
+                margin-top: 30px;
                 font-size: 10px;
             }
         }
